@@ -1,4 +1,4 @@
-package com.github.cluelessskywatcher.jenkins_example;
+package com.github.cluelessskywatcher.jenkinsexample;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
