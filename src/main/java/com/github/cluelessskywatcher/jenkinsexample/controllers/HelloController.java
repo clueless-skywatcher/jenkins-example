@@ -11,7 +11,7 @@ public class HelloController {
     @GetMapping("/message")
 	public Map<String, Object> getMessage() {
 		Map<String, Object> map = new HashMap<>();
-		map.put("message", "Hello World!");
+		map.put("message", "Hello World! New Commit!");
 		return map;
 	}
 }
