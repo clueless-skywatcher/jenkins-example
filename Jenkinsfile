@@ -1,17 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('Checkout Code') {
+    stage('Checkout') {
       steps {
         git(url: 'https://github.com/clueless-skywatcher/jenkins-example', branch: 'main')
       }
     }
-
-    stage('Show Files') {
+    stage('Build') {
       steps {
-        sh 'ls -la'
+          sh './mvnw clean install'
       }
     }
-
   }
 }
